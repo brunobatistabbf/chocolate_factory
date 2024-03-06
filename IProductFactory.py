@@ -5,3 +5,7 @@ class IEasterEggProduct(ABC):
     @abstractmethod
     def ShowInfo(self):
         pass
+
+    @abstractmethod
+    def CodigoProduto(self):
+        pass
