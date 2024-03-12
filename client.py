@@ -1,13 +1,52 @@
 import IEasterEggs
 from EasterEggsFactorys import NestleFactory, GarotoFactory, LactaFactory
+
+def Portfolio():
+    print("---------- Códigos Disponiveis ------------")
+    print("Nestle:")
+    print(NestleFactory().EasterEgg().CodigoProduto())
+    print(NestleFactory().EasterEgg2().CodigoProduto())
+    print(NestleFactory().EasterEgg3().CodigoProduto())
+    print("Garoto:")
+    print(GarotoFactory().EasterEgg().CodigoProduto())
+    print(GarotoFactory().EasterEgg2().CodigoProduto())
+    print(GarotoFactory().EasterEgg3().CodigoProduto())
+    print("Lactea:")
+    print(LactaFactory().EasterEgg().CodigoProduto())
+    print(LactaFactory().EasterEgg2().CodigoProduto())
+    print(LactaFactory().EasterEgg3().CodigoProduto())
+    print("-----------------------------------------")
 def Client(codigo):
     if(codigo == 101):
         OvoDePascoa = NestleFactory().EasterEgg()
         print(f"\n{OvoDePascoa.ShowInfo()}\n")
     elif(codigo == 102):
-        NestleFactory.EasterEgg2()
+        OvoDePascoa = NestleFactory().EasterEgg2()
+        print(f"\n{OvoDePascoa.ShowInfo()}\n")
     elif(codigo == 103):
-        NestleFactory.EasterEgg3()
+        OvoDePascoa = NestleFactory().EasterEgg3()
+        print(f"\n{OvoDePascoa.ShowInfo()}\n")
+    #garoto
+    elif(codigo == 104):
+        OvoDePascoa = GarotoFactory().EasterEgg()
+        print(f"\n{OvoDePascoa.ShowInfo()}\n")
+    elif(codigo == 105):
+        OvoDePascoa = GarotoFactory().EasterEgg2()
+        print(f"\n{OvoDePascoa.ShowInfo()}\n")
+    elif(codigo == 106):
+        OvoDePascoa = GarotoFactory().EasterEgg3()
+        print(f"\n{OvoDePascoa.ShowInfo()}\n")
+    #Lactea
+    elif(codigo == 107):
+        OvoDePascoa = LactaFactory().EasterEgg()
+        print(f"\n{OvoDePascoa.ShowInfo()}\n")
+    elif(codigo == 108):
+        OvoDePascoa = LactaFactory().EasterEgg2()
+        print(f"\n{OvoDePascoa.ShowInfo()}\n")
+    elif(codigo == 109):
+        OvoDePascoa = LactaFactory().EasterEgg3()
+        print(f"\n{OvoDePascoa.ShowInfo()}\n")
+
 
 
 
@@ -21,8 +60,9 @@ if __name__ == '__main__':
             Client(codigo)
         elif(resposta == 2):
             print("CATOLOGO")
+            Portfolio()
         elif(resposta == 3):
-            print("Obrigado por usar a aplicação")
+            print("Obrigado por usar a aplicação!")
             aux = False
         else:
             print("Insira uma opção válida!")

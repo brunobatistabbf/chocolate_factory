@@ -77,7 +77,7 @@ class AoLeite(IEasterEggProduct):
         print("Preço: R$ 58,90")
 
     def CodigoProduto(self):
-        return 106
+        return 107
 
 class Oreo(IEasterEggProduct):
     def ShowInfo(self):
@@ -87,7 +87,7 @@ class Oreo(IEasterEggProduct):
         print("Validade: 5 meses")
         print("Preço: R$ 60,30")
     def CodigoProduto(self):
-        return 107
+        return 108
 
 class SonhoDeValsa(IEasterEggProduct):
     def ShowInfo(self):
@@ -98,7 +98,7 @@ class SonhoDeValsa(IEasterEggProduct):
         print("Preço: R$ 64,00")
 
     def CodigoProduto(self):
-        return 108
+        return 109
 #HERSHEY
 
 #FERREIRO
