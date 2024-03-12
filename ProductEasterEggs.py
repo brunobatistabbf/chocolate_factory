@@ -123,8 +123,8 @@ class SonhoDeValsa(IEasterEggProduct):
 
 class OuroBranco(IEasterEggProduct):
     def ShowInfo(self):
-            print("BIS")
-            print("Marca: Lactea")
+            print("OURO BRANCO")
+            print("Marca: Lacta")
             print("Peso: 310g")
             print("Validade: 8 meses")
             print("Preço: R$ 49,92")
@@ -133,5 +133,82 @@ class OuroBranco(IEasterEggProduct):
             return 112
 
 #HERSHEY
+class Hersheys1(IEasterEggProduct):
+    def ShowInfo(self):
+        print("HERSHEYS")
+        print("Marca: Hersheys")
+        print("Peso: 137g")
+        print("Validade: 4 meses")
+        print("Preço: R$ 79,98")
+
+    def CodigoProduto(self):
+        return 113
+
+class Hersheys2(IEasterEggProduct):
+    def ShowInfo(self):
+        print("HERSHEYS")
+        print("Marca: Hersheys")
+        print("Peso: 225g")
+        print("Validade: 6 meses")
+        print("Preço: R$ 89,30")
+    def CodigoProduto(self):
+        return 114
+
+class Hersheys3(IEasterEggProduct):
+    def ShowInfo(self):
+        print("HERSHEYS")
+        print("Marca: Hersheys")
+        print("Peso: 336g")
+        print("Validade: 8 meses")
+        print("Preço: R$ 98,90")
+
+    def CodigoProduto(self):
+        return 115
 
 #FERREIRO
+class FerreiroRocher1(IEasterEggProduct):
+    def ShowInfo(self):
+        print("FERREIRO ROCHER")
+        print("Marca: Ferreiro")
+        print("Peso: 137g")
+        print("Validade: 5 meses")
+        print("Preço: R$ 79,45")
+
+    def CodigoProduto(self):
+        return 116
+
+class FerreiroRocher2(IEasterEggProduct):
+    def ShowInfo(self):
+        print("FERREIRO ROCHER")
+        print("Marca: Ferreiro")
+        print("Peso: 225g")
+        print("Validade: 7 meses")
+        print("Preço: R$ 99,30")
+    def CodigoProduto(self):
+        return 117
+
+class FerreiroRocher3(IEasterEggProduct):
+    def ShowInfo(self):
+        print("FERREIRO ROCHER")
+        print("Marca: Ferreiro")
+        print("Peso: 336g")
+        print("Validade: 12 meses")
+        print("Preço: R$ 105,90")
+
+    def CodigoProduto(self):
+        return 118
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
