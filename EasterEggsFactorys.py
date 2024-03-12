@@ -1,6 +1,6 @@
 from IEasterEggs import IEasterEggs
 from IProductFactory import IEasterEggProduct
-from ProductEasterEggs import Alpino, Crocante, AoLeite, Classic, KitKat, Talento, BatonAoLeite, Oreo, SonhoDeValsa
+from ProductEasterEggs import Alpino, Crocante, AoLeite, Classic, KitKat, Talento, BatonAoLeite, Oreo, SonhoDeValsa, Bis, Caribe
 
 class NestleFactory(IEasterEggs):
     def EasterEgg(self) -> IEasterEggProduct:
@@ -9,6 +9,8 @@ class NestleFactory(IEasterEggs):
         return Classic()
     def EasterEgg3(self) -> IEasterEggProduct:
         return KitKat()
+    def EasterEgg4(self) -> IEasterEggProduct:
+        return Bis()
 class GarotoFactory(IEasterEggs):
     def EasterEgg(self) -> IEasterEggProduct:
         return Crocante()
@@ -16,7 +18,8 @@ class GarotoFactory(IEasterEggs):
         return Talento()
     def EasterEgg3(self) -> IEasterEggProduct:
         return BatonAoLeite()
-
+    def EasterEgg4(self) -> IEasterEggProduct:
+        return Caribe()
 class LactaFactory(IEasterEggs):
     def EasterEgg(self) -> IEasterEggProduct:
         return AoLeite()
@@ -24,3 +27,5 @@ class LactaFactory(IEasterEggs):
         return Oreo()
     def EasterEgg3(self) -> IEasterEggProduct:
         return SonhoDeValsa()
+    def EasterEgg4(self) -> IEasterEggProduct:
+        return OuroBranco()

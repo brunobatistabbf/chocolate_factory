@@ -33,6 +33,16 @@ class KitKat(IEasterEggProduct):
     def CodigoProduto(self):
         return 103
 
+class Bis(IEasterEggProduct):
+    def ShowInfo(self):
+        print("BIS")
+        print("Marca: Nestle")
+        print("Peso: 200g")
+        print("Validade: 10 meses")
+        print("Preço: R$ 39,99")
+    def CodigoProduto(self):
+        return 110
+
 #GAROTO
 class Crocante(IEasterEggProduct):
     def ShowInfo(self):
@@ -67,6 +77,17 @@ class BatonAoLeite(IEasterEggProduct):
     def CodigoProduto(self):
         return 106
 
+class Caribe(IEasterEggProduct):
+    def ShowInfo(self):
+            print("Caribe")
+            print("Marca: Garoto")
+            print("Peso: 300g")
+            print("Validade: 12 meses")
+            print("Preço: R$ 69,90")
+
+    def CodigoProduto(self):
+            return 111
+
 #LACTA
 class AoLeite(IEasterEggProduct):
     def ShowInfo(self):
@@ -99,6 +120,18 @@ class SonhoDeValsa(IEasterEggProduct):
 
     def CodigoProduto(self):
         return 109
+
+class OuroBranco(IEasterEggProduct):
+    def ShowInfo(self):
+            print("BIS")
+            print("Marca: Lactea")
+            print("Peso: 310g")
+            print("Validade: 8 meses")
+            print("Preço: R$ 49,92")
+
+    def CodigoProduto(self):
+            return 112
+
 #HERSHEY
 
 #FERREIRO

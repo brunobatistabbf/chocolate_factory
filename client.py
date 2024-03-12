@@ -1,23 +1,27 @@
 import IEasterEggs
 from EasterEggsFactorys import NestleFactory, GarotoFactory, LactaFactory
 
-def Portfolio():
-    print("---------- Códigos Disponiveis ------------")
-    print("Nestle:")
-    print(NestleFactory().EasterEgg().CodigoProduto())
-    print(NestleFactory().EasterEgg2().CodigoProduto())
-    print(NestleFactory().EasterEgg3().CodigoProduto())
-    print("Garoto:")
-    print(GarotoFactory().EasterEgg().CodigoProduto())
-    print(GarotoFactory().EasterEgg2().CodigoProduto())
-    print(GarotoFactory().EasterEgg3().CodigoProduto())
-    print("Lactea:")
-    print(LactaFactory().EasterEgg().CodigoProduto())
-    print(LactaFactory().EasterEgg2().CodigoProduto())
-    print(LactaFactory().EasterEgg3().CodigoProduto())
-    print("-----------------------------------------")
+
 def Client(codigo):
-    if(codigo == 101):
+    if(codigo == 0):
+        print("---------- Códigos Disponiveis ------------")
+        print("Nestle:")
+        print(NestleFactory().EasterEgg().CodigoProduto())
+        print(NestleFactory().EasterEgg2().CodigoProduto())
+        print(NestleFactory().EasterEgg3().CodigoProduto())
+        print(NestleFactory().EasterEgg4().CodigoProduto())
+        print("Garoto:")
+        print(GarotoFactory().EasterEgg().CodigoProduto())
+        print(GarotoFactory().EasterEgg2().CodigoProduto())
+        print(GarotoFactory().EasterEgg3().CodigoProduto())
+        print(GarotoFactory().EasterEgg4().CodigoProduto())
+        print("Lactea:")
+        print(LactaFactory().EasterEgg().CodigoProduto())
+        print(LactaFactory().EasterEgg2().CodigoProduto())
+        print(LactaFactory().EasterEgg3().CodigoProduto())
+        print(LactaFactory().EasterEgg4().CodigoProduto())
+        print("-----------------------------------------")
+    elif(codigo == 101):
         OvoDePascoa = NestleFactory().EasterEgg()
         print(f"\n{OvoDePascoa.ShowInfo()}\n")
     elif(codigo == 102):
@@ -50,6 +54,7 @@ def Client(codigo):
 
 
 
+
 if __name__ == '__main__':
     print("\n<<---AQUISIÇÃO DE OVO DE PASCOA--->>\n")
     aux = True
@@ -60,7 +65,7 @@ if __name__ == '__main__':
             Client(codigo)
         elif(resposta == 2):
             print("CATOLOGO")
-            Portfolio()
+            Client(codigo=0)
         elif(resposta == 3):
             print("Obrigado por usar a aplicação!")
             aux = False
